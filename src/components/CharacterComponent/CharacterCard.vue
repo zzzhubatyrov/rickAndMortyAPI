@@ -30,12 +30,6 @@ async function getFirstEpisode(url: string): Promise<string> {
 
 export default {
   name: 'CharacterCard',
-  props: {
-    character: {
-      type: Object,
-      required: true,
-    },
-  },
   setup() {
     let characters = ref<Character[]>([]);
     let info = ref<{ next: string | null, prev: string | null }>({ next: null, prev: null });
